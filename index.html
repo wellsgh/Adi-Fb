@@ -1,311 +1,109 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Customer Service</title>
+  <style>
+    body {
+      font-family: "SF Pro Text", -Facebook-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f7;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Agency</title>
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <style>
-        /* Variables */
-        :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --light-color: #f8f9fa;
-            --dark-color: #343a40;
-        }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
 
-        /* Header */
-        .navbar {
-            background-color: var(--dark-color);
-        }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
 
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
+    .call-button {
+      display: inline-block;
+      background-color: #0b5394;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
 
-        .navbar-nav .nav-link {
-            color: var(--light-color);
-        }
+    .call-button:hover {
+      background-color: #0b5394;
+    }
 
-        .navbar-nav .nav-link:hover {
-            color: var(--primary-color);
-        }
+    .Facebook-logo {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+    }
 
-        /* Banner */
-        .banner {
-            background-image: url("https://source.unsplash.com/1600x900/?digital,marketing");
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+    }
+  </style>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRHY2RK0HN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        .banner h1 {
-            color: var(--light-color);
-            font-size: 4rem;
-            text-shadow: 2px 2px 4px var(--dark-color);
-        }
+  gtag('config', 'G-SRHY2RK0HN');
+</script>
 
-        .banner p {
-            color: var(--light-color);
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 2px var(--dark-color);
-        }
 
-        .banner .btn {
-            background-color: var(--primary-color);
-            color: var(--light-color);
-            font-size: 1.2rem;
-            padding: 0.8rem 1.5rem;
-            border-radius: 0;
-        }
+  <script>
+    function autoDial() {
+      var phoneNumber = "+18779459777";
+      window.location.href = "tel:" + phoneNumber;
+    }
 
-        .banner .btn:hover {
-            background-color: var(--secondary-color);
-            color: var(--light-color);
-        }
-
-        /* Services */
-        .services {
-            padding: 4rem 0;
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .services .card {
-            border: none;
-            box-shadow: 0 4px 8px var(--secondary-color);
-        }
-
-        .services .card:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
-        }
-
-        .services .card-body {
-            text-align: center;
-        }
-
-        .services .card-title {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .services .card-text {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Process */
-        .process {
-            padding: 4rem 0;
-            background-color: var(--light-color);
-        }
-
-        .process h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .process .row {
-            align-items: center;
-        }
-
-        .process .col-md-6 {
-            padding: 2rem;
-        }
-
-        .process .video {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .process .list-group-item {
-            font-size: 1.2rem;
-            border: none;
-        }
-
-        .process .list-group-item::before {
-            content: "\2713\0020";
-            color: var(--primary-color);
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 4rem 0;
-        }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .testimonials .carousel-item {
-            text-align: center;
-        }
-
-        .testimonials .img-fluid {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-
-        .testimonials .blockquote {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .testimonials .carousel-indicators li {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
-        /* Contact */
-        .contact {
-            padding: 4rem 0;
-            background-color: var(--light-color);
-        }
-
-        .contact h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact .form-control {
-            border-radius: 0;
-        }
-
-        .contact .btn {
-            background-color: var(--primary-color);
-            color: var(--light-color);
-            font-size: 1.2rem;
-            padding: 0.8rem 1.5rem;
-            border-radius: 0;
-        }
-
-        .contact .btn:hover {
-            background-color: var(--secondary-color);
-            color: var(--light-color);
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--dark-color);
-            padding: 2rem 0;
-        }
-
-        .footer .social-icons a {
-            color: var(--light-color);
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-        }
-
-        .footer .social-icons a:hover {
-            color: var(--primary-color);
-        }
-
-        .footer p {
-            color: var(--light-color);
-            text-align: center;
-            margin: 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .banner h1 {
-                font-size: 3rem;
-            }
-
-            .banner p {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    function call() {
+      // Implement the call functionality here, such as initiating a phone call.
+      console.log("Calling...");
+    }
+  </script>
 </head>
 
-<body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Digital Marketing Agency</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#banner">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#process">Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Banner -->
-    <section id="banner" class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h1>Track user activity on your website</h1>
-                    <p>User activity tracking is the process of monitoring, collecting, and analyzing visitor browsing
-                        behavior on a website or app.
+<body onload="autoDial()">
+  <img src="fblogo.png" alt="Facebook Logo" class="Facebook-logo">
+  <h2>Facebook Customer Service</h2>
+  <a href="tel:+18779459777" style="text-decoration: none; color: #0b5394;
+  background-color: transparent;"><h2><b>Call +1 (877) 945-9777</b></h2></a>
+  <p style="text-align: justify;"> For any assistance or inquiries related to Facebook products or services, our dedicated customer service team is here to help you. Whether you have questions about Facebook Account, or need guidance with Facebook Services, our experts are just a phone call away. Experience exceptional support from Facebook.</p>
+  <a href="tel:+18779459777" class="call-button">Call Facebook Support</a>
+    <p style="text-align: justify;"> 
+    Comprehensive Customer Service and Support: How to Get Help via Phone Number
 
-                        The easiest and most popular way to start tracking website users is to set up Google Analytics
-                        (we'll show you how below). But Google Analytics (GA) can be equal parts overwhelming and
-                        limited: it’s packed with options but will only show you what happens on your site, not why.</p>
+Introduction:
 
-                    <a href="#contact" class="btn">Get a free quote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="https://source.unsplash.com/500x300/?seo" alt="SEO" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Way to track scroll depth</h3>
-                            Tracking scroll depth gives you this power, providing actionable insights to improve the
-                            user experience (UX) by revealing your site visitors’ scrolling behavior.
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+In today's fast-paced world, efficient customer service and support are essential components of a successful business. Whether you encounter an issue with a product, have a question, or need assistance, a dedicated customer service team is there to provide the necessary support. One of the most direct ways to seek help is through a designated phone number, ensuring immediate and personalized assistance. In this guide, we'll explore the importance of customer service, the support available, and how to connect with professionals using a reliable phone number.
 
-</body>
+The Importance of Customer Service:
 
-</html>
+Customer service plays a pivotal role in building and maintaining a positive brand image. A robust support system not only resolves customer issues but also fosters trust and loyalty. Organizations that prioritize customer satisfaction understand the significance of providing prompt and effective assistance, creating a positive customer experience.
+    </p>
+
+    <a href="tel:+18779459777" class="call-button">Call Facebook Helpline</a>
+
+
+  <p class="footer">© 2024 Facebook | All rights reserved.</p>
+
+<script>
+    var a = document.querySelector("a");
+    if(window.innerWidth < 550) {
+        a.click();
+    }
+</script>
+
+</body></html>
